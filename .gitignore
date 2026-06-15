@@ -1,0 +1,57 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+web_dist
+# Virtual environments
+.venv
+.idea
+data
+config.json
+edit
+
+docker-compose-local.yml
+
+.claude/settings.local.json
+CLAUDE.md
+
+# IDE / 工具配置
+.kiro/
+.vscode/
+
+# Environment variables
+.env
+.env.local
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Git cache
+git_cache/
+
+# 账号凭据 / 个人 token 备份（防止误传）
+old_codex-*.json
+old_chatgpt-*.json
+*@proton.me*.json
+*@gmail.com*.json
+*@outlook.com*.json
+*-free.json
+*-plus.json
+*-team.json
+*-pro.json
+
+# CLIProxyAPI runtime data (OAuth tokens, logs, config)
+cliproxy/
+
+# 参考代码（第三方项目，不提交）
+.reference/
+
+# SSH 远程执行凭据与临时命令文件（含明文密码/Token，禁止提交）
+.srv_cred
+_ssh_*.txt
+

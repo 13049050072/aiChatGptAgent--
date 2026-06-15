@@ -1,0 +1,33 @@
+[project]
+name = "chatgpt2api"
+version = "1.2.2"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "curl-cffi>=0.15.0",
+    "fastapi>=0.136.0",
+    "httpx>=0.28.1",
+    "pillow>=12.2.0",
+    "pybase64>=1.4.3",
+    "python-multipart>=0.0.26",
+    "tiktoken>=0.12.0",
+    "uvicorn>=0.44.0",
+    "sqlalchemy>=2.0.0",
+    "psycopg2-binary>=2.9.0",
+    "gitpython>=3.1.0",
+    # SOCKS5 代理支持（711Proxy API URL 模式提取的 IP 用 SOCKS5）
+    "pysocks>=1.7.1",
+    # 注册流程里 requests session 用的 retry 适配器
+    "urllib3>=2.0.0",
+    "requests>=2.31.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+]
+
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple"
+default = true
